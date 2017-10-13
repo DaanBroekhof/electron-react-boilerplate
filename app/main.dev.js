@@ -10,8 +10,9 @@
  *
  * @flow
  */
-import { app, BrowserWindow } from 'electron';
-import MenuBuilder from './menu';
+const app = require('electron').app;
+const BrowserWindow = require('electron').BrowserWindow;
+const MenuBuilder = require('./menu');
 
 let mainWindow = null;
 
